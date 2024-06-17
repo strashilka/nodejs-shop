@@ -6,11 +6,6 @@
     <%- include('../includes/navigation.ejs') %>
 
     <main>
-<ul>
-    <% for (let key in locals) { %>
-        <li><strong><%= key %></strong>: <%= JSON.stringify(locals[key], null, 2) %></li>
-    <% } %>
-</ul>
         <% if (prods.length > 0) { %>
             <div class="grid">
                 <% for (let product of prods) { %>
